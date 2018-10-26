@@ -10,11 +10,23 @@ _This webpage gathers a inserted number from a user and then creates an array wi
 
 ### Specs
 * create an array equal to input number.
+      Input = 6
+      Array = [0, 1, 2, 3, 4, 5, 6]
 * if a value contains 0 return Beep.
+      Input = 0 || 20 || 40 || 50
+      Output = "Beep!"
 * if a value contains 1 return Boop.
+      Input = 1 || 11 || 31 || 91
+      Output = "Boop!"
 * if a value is divisible by 3 return "I'm sorry Dave. I'm afraid I can't do that.".
+      Input = 3 || 6 || 9 ||
+      Output = "I'm sorry Dave. I'm afraid I can't do that."
 * if 1 comes before zero in a value return boop.
+      Input = 10 || 101 || 191
+      Output = "Boop!"
 * if 3 comes before 1 or 0 and is divisible by 3 return "I'm sorry Dave. I'm afraid I can't do that."
+      Input = 30 || 33 || 39 ||
+      Output = "I'm sorry Dave. I'm afraid I can't do that."
 
 ## Setup/Installation Requirements
 

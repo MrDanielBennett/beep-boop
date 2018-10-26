@@ -11,14 +11,11 @@ function beepBoop(inputArray){
     if (inputArray[i] === 0){
       inputArray[i] = "Beep!";
     }
-    if (inputArray[i] %3 === 0){
-      inputArray[i] = "I'm sorry Dave. I'm afraid I can't do that.";
-    }
     if (inputArray[i] === 1 ||inputArray [i]=== 100 || inputArray[i] >= 10 && inputArray[i] <= 19 || inputArray[i] %10 === 0 + 1){
       inputArray[i] = "Boop!";
     }
-    if (inputArray[i] >= 10 && inputArray[i] <= 19 || inputArray[i] %10 === 0 + 1){
-      inputArray[i] = "Boop!";
+    if (inputArray[i] %3 === 0){
+      inputArray[i] = "I'm sorry Dave. I'm afraid I can't do that.";
     }
     if (inputArray[i] %10===0){
       inputArray[i] = "Beep!";
