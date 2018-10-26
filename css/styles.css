@@ -1,3 +1,16 @@
+body {
+   background-image: radial-gradient(circle, red, gray);
+}
+.container{
+  text-align: center;
+}
+.jumbotron{
+  margin-top: 10px;
+  border: solid darkgray;
+}
+.well {
+  border: solid darkgray;
+}
 #result-well{
   display: none;
 }
