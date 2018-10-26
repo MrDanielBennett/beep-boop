@@ -40,6 +40,8 @@ $(document).ready(function(){
     $("#input-well").hide();
     $("#result-well").show();
     $("#result").text(inputArray.join(' '));
-    console.log()
-  })
-})
+    })
+  $('#refresh-btn').click(function() {
+    location.reload(true);
+  });
+});
