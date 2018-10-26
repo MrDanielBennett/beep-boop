@@ -9,19 +9,22 @@ function createInputArray(input){
 function beepBoop(inputArray){
   for (i=0; i<inputArray.length; i++){
     if (inputArray[i] === 0){
-      inputArray[i] = "Beep";
+      inputArray[i] = "Beep!";
     }
     if (inputArray[i] %3 === 0){
       inputArray[i] = "I'm sorry Dave. I'm afraid I can't do that.";
     }
-    if (inputArray[i] === 1 ||inputArray [i]=== 100){
-      inputArray[i] = "Boop";
+    if (inputArray[i] === 1 ||inputArray [i]=== 100 || inputArray[i] >= 10 && inputArray[i] <= 19 || inputArray[i] %10 === 0 + 1){
+      inputArray[i] = "Boop!";
     }
     if (inputArray[i] >= 10 && inputArray[i] <= 19 || inputArray[i] %10 === 0 + 1){
-      inputArray[i] = "Boop";
+      inputArray[i] = "Boop!";
     }
     if (inputArray[i] %10===0){
-      inputArray[i] = "Beep";
+      inputArray[i] = "Beep!";
+    }
+    if (inputArray[i] >= 101 && inputArray[i] <= 199){
+      inputArray[i] = "Boop!";
     }
     console.log(inputArray)
   }
@@ -35,7 +38,7 @@ $(document).ready(function(){
     var input = parseInt($("#userInput").val());
     var result = createInputArray(input)
 
-    $("#result").val(inputArray.join(', '));
+    $("#result").text(inputArray.join(' '));
     console.log()
   })
 })
