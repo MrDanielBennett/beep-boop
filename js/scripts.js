@@ -37,7 +37,8 @@ $(document).ready(function(){
     event.preventDefault();
     var input = parseInt($("#userInput").val());
     var result = createInputArray(input)
-
+    $("#input-well").hide();
+    $("#result-well").show();
     $("#result").text(inputArray.join(' '));
     console.log()
   })
