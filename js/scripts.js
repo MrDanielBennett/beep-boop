@@ -40,7 +40,7 @@ $(document).ready(function(){
     $("#input-well").hide();
     $("#result-well").show();
     $("#result").text(inputArray.join(' '));
-    })
+  });
   $('#refresh-btn').click(function() {
     location.reload(true);
   });

@@ -14,3 +14,8 @@ body {
 #result-well{
   display: none;
 }
+#button {
+  display: block;
+  margin-left: 45%;
+  margin-top: 10px;
+}
