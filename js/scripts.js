@@ -8,8 +8,7 @@ function createInputArray(input){
 }
 
 function beepBoop(inputArray){
-  debugger
-  var output = []
+  inputArray.toString();
   for (i=0; i<inputArray.length; i++){
     if (inputArray[i] === 0){
       inputArray[i] = "Beep";
@@ -19,6 +18,11 @@ function beepBoop(inputArray){
     }
     if (inputArray[i] %3 === 0){
       inputArray[i] = "I'm sorry Dave. I'm afraid I can't do that.";
+    }
+    debugger
+    if (inputArray[i] >= 10 && inputArray[i] < 19 || inputArray[i] %10 === 0 + 1){
+      inputArray[i] = "Boop";
+
     }
     console.log(inputArray)
   }
