@@ -1,42 +1,30 @@
-//Back end
-var inputArray = [];
-function createInputArray(input){
-  for (i = 0; i <= input; i++){
-    inputArray.push(i);
+// Back end
+function beepBoop(input){
+  var masterInput = input+1
+  var beepBoopOutput = [];
+  for (var i=0; i < masterInput; i++){
+    console.log(beepBoopOutput)
+    if (i %3 === 0 && i !== 0){
+      beepBoopOutput.push("I'm sorry Dave. I'm afraid I can't do that.");
+    } else if (i.toString().split("").includes("1")){
+      beepBoopOutput.push("boop!");
+    } else if (i.toString().split("").includes("0")){
+      beepBoopOutput.push("beep!");
+    } else {
+      beepBoopOutput.push(" " + i.toString())
+    }
   }
-  return beepBoop(inputArray)
-}
-function beepBoop(inputArray){
-  for (i=0; i<inputArray.length; i++){
-    if (inputArray[i] === 0){
-      inputArray[i] = "Beep!";
-    }
-    if (inputArray[i] === 1 ||inputArray [i]=== 100 || inputArray[i] >= 10 && inputArray[i] <= 19 || inputArray[i] %10 === 0 + 1){
-      inputArray[i] = "Boop!";
-    }
-    if (inputArray[i] %3 === 0){
-      inputArray[i] = "I'm sorry Dave. I'm afraid I can't do that.";
-    }
-    if (inputArray[i] %10===0){
-      inputArray[i] = "Beep!";
-    }
-    if (inputArray[i] >= 101 && inputArray[i] <= 199){
-      inputArray[i] = "Boop!";
-    }
-    console.log(inputArray)
-  }
-  return beepBoop;
-}
-
+  return beepBoopOutput;
+};
 //Front end
 $(document).ready(function(){
   $("#userInputForm").submit(function(event){
     event.preventDefault();
     var input = parseInt($("#userInput").val());
-    var result = createInputArray(input)
+    var result = beepBoop(input)
     $("#input-well").hide();
     $("#result-well").show();
-    $("#result").text(inputArray.join(' '));
+    $("#result").text(result.join(' '));
   });
   $('#refresh-btn').click(function() {
     location.reload(true);
